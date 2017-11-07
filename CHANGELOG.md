@@ -1,3 +1,6 @@
+## 3.0.5
+  - Update gemspec summary
+
 ## 3.0.4
   - Asciidoc fixes
   
