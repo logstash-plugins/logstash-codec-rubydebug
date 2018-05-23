@@ -12,7 +12,7 @@ class LogStash::Codecs::RubyDebug < LogStash::Codecs::Base
 
   # AWESOME_OPTIONS = {:color => {:logstash_timestamp => :green}}
   # disabled options, awesome_print coloring option is buggy and only occurs once and it cannot be tested.
-  AWESOME_OPTIONS = {}
+  AWESOME_OPTIONS = {:sort_keys => true}
 
   def register
     require "awesome_print"
