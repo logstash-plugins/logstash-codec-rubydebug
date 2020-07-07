@@ -1,3 +1,6 @@
+## 3.1.0
+- Replace stale awesome_print library with maintained fork called amazing_print.
+
 ## 3.0.6
  - Fixes crash that could occur on startup if `$HOME` was unset or if `${HOME}/.aprc` was unreadable by pinning `awesome_print` dependency to a release before the bug was introduced.
 
