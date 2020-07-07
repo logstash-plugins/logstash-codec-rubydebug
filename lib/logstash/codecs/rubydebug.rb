@@ -10,7 +10,8 @@ class LogStash::Codecs::RubyDebug < LogStash::Codecs::Base
   # Should the event's metadata be included?
   config :metadata, :validate => :boolean, :default => false
 
-  AMAZING_OPTIONS = {:color => {:logstash_timestamp => :green}}
+  # AMAZING_OPTIONS = {:color => {:logstash_timestamp => :green}}
+  AMAZING_OPTIONS = {}
 
   def register
     require "amazing_print"

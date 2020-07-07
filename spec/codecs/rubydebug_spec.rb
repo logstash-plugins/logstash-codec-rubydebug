@@ -7,10 +7,11 @@ describe LogStash::Codecs::RubyDebug do
   subject { LogStash::Codecs::RubyDebug.new }
 
   context "#encode" do
-    it "should print beautiful hashes" do
-      subject.register
+    let(:event) { LogStash::Event.new({"what" => "ok", "who" => 2}) }
 
-      event = LogStash::Event.new({"what" => "ok", "who" => 2})
+    before(:each) { subject.register }
+
+    it "should print beautiful hashes" do
       on_event = lambda { |e, d| expect(d.chomp).to eq(event.to_hash.ai) }
 
       subject.on_event(&on_event)
