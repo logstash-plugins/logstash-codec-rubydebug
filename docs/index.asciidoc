@@ -21,7 +21,7 @@ include::{include_path}/plugin_header.asciidoc[]
 ==== Description
 
 The rubydebug codec will output your Logstash event data using
-the Ruby Awesome Print library.
+the Ruby Amazing Print library.
 
 
 [id="plugins-{type}s-{plugin}-options"]
